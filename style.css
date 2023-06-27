@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(100, 104, 119);
+}
+
+ul {
+  list-style: none;
+  padding:1rem;
+}
+.h3{
+    padding: 1rem;
+}
+main {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 2rem;
+}
+
+.skills,
+.About {
+  padding: 1rem;
+} 
+ .experience{
+    line-height: 1.5;
+
+ }
+
+ .experience ul{
+    margin: 2rem;
+
+ }
+.education{
+    padding: 1rem;
+    line-height:1.5;
+}
+.education ul{
+margin: 2rem
+}
+.left {
+  background-color:rgb(125, 148, 158);
+  height: 1000px
+}
+.left-image {
+  position: relative;
+  bottom: 0;
+  left: 0.1rem;
+  width: 200px;
+}
+.right{
+    background-color: rgb(125, 148, 158);
+    padding: 0rem;
+}  
+
