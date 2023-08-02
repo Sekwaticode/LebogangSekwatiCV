@@ -14,14 +14,16 @@
     <main>
         <section class="left">
             <div class="left">
-                <img class="left-image thin-red-border" src="https://pbs.twimg.com/profile_images/1593527560524206080/9p04I1CJ_400x400.jpg" alt="Lebogang Sekwati">
+                <img class="left-image thin-red-border"
+                    src="https://pbs.twimg.com/profile_images/1593527560524206080/9p04I1CJ_400x400.jpg"
+                    alt="Lebogang Sekwati">
 
                 <h1> Project portfolio of Lebogang Sekwati</h1>
                 <br>
                 <p>As an aspiring web developer, I'm passionate about crafting captivating online experiences. With
                     dedication, problem-solving skills, and a love for coding, I strive to create innovative
                     websites and applications. </p>
-                    <hr>
+                <hr>
 
                 <h3 class="h3">Contact details</h3>
                 <ul>
@@ -29,26 +31,20 @@
                     <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/lebogang-sekwati-544751191">LinkedIn</a></li>
                 </ul>
 
-                <hr />
-
                 <div class="skills">
                     <h3>Technical Skills</h3>
                     <ul>
                         <li>
                             <p><i class="fa-brands fa-square-js"></i> Javascript </p>
-                            
                         </li>
                         <li>
                             <p> <i class="fa-brands fa-html5"></i> HTML</p>
-                        
                         </li>
                         <li>
                             <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-                           
                         </li>
                         <li>
                             <p><i class="fa-solid fa-database"></i> SQL</p>
-                           
                         </li>
                     </ul>
                 </div>
@@ -69,17 +65,13 @@
                     </li>
                 </ul>
             </div>
-
-        
         </section>
 
         <section class="right">
             <div class="experience">
-
                 <h1><i class="fa-solid fa-book"></i> Education</h1>
                 <h3>2015-2019</h3>
                 <h4><i class="fa-solid fa-gavel"></i> Bcom(Law)</h4>
-
                 <ul>
                     <li>I became familiar with the South African Legal System.</li>
                     <li>I participated in Moot court and became familiar with litigation procedures.</li>
@@ -91,46 +83,61 @@
                 <br>
                 <hr>
 
-                <div class="experience">
-                    <h1><i class="fa-sharp fa-solid fa-gear"></i>  Work Experience</h1>
-                    <h3>March 2019 - October 2021</h3>
-                    <h4><i class="fa-solid fa-phone"></i> Platinum Life</h4>
+                <h1><i class="fa-sharp fa-solid fa-gear"></i> Work Experience</h1>
+                <h3>March 2019 - October 2021</h3>
+                <h4><i class="fa-solid fa-phone"></i> Platinum Life</h4>
+                <ul>
+                    <li>I called 30 prospective clients per day with excellent telephone etiquette.</li>
+                    <li>I maintained excellent customer feedback in terms of friendliness, professionalism, and clarity.</li>
+                    <li>I maintained an organized, clean, professional workspace.</li>
+                    <li>I excelled in achieving individual daily targets while assisting other team members in achieving theirs.</li>
+                    <li>I was highly resourceful in multiple computer applications to optimize customer satisfaction, client retention, and conflict resolution.</li>
+                </ul>
 
-                    <ul>
-                        <li>I called 30 prospective clients per day with excellent telephone etiquette.</li>
-                        <li>I maintained excellent customer feedback in terms of friendliness, professionalism, and
-                            clarity.</li>
-                        <li>I maintained an organized, clean, professional workspace.</li>
-                        <li>I excelled in achieving individual daily targets while assisting other team members in
-                            achieving theirs.</li>
-                        <li>I was highly resourceful in multiple computer applications to optimize customer satisfaction,
-                            client
-                            retention, and conflict resolution.</li>
-                    </ul>
+                <br>
 
-                    <br>
-
-                    <h3>October 2018 - February 2019</h3>
-                    <h4><i class="fa-solid fa-loveseat"></i> Kwa-Mkhulu Furniture</h4>
-
-                    <ul>
-                        <li>I developed a morning routine that ensured the furniture store was clean and presentable
-                            before
-                            opening time.</li>
-                        <li>I warmly welcomed 20-30 customers per day.</li>
-                        <li>I developed a Microsoft Excel Spreadsheet that allowed the business to calculate selling price
-                            easily and consistently.</li>
-                        <li>I provided administrative and clerical support via Microsoft Excel and CompuByte.</li>
-                        <li>I provided excellent customer service with a helpful and friendly attitude.</li>
-                    </ul>
-
-
-                </div>
-
+                <h3>October 2018 - February 2019</h3>
+                <h4><i class="fa-solid fa-loveseat"></i> Kwa-Mkhulu Furniture</h4>
+                <ul>
+                    <li>I developed a morning routine that ensured the furniture store was clean and presentable before opening time.</li>
+                    <li>I warmly welcomed 20-30 customers per day.</li>
+                    <li>I developed a Microsoft Excel Spreadsheet that allowed the business to calculate selling price easily and consistently.</li>
+                    <li>I provided administrative and clerical support via Microsoft Excel and CompuByte.</li>
+                    <li>I provided excellent customer service with a helpful and friendly attitude.</li>
+                </ul>
             </div>
-
         </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <button id="downloadPdfButton">Download PDF</button>
+    <script>
+        function downloadPdf() {
+            const element = document.body; 
+            const options = {
+                margin: 10,
+                filename: 'Lebogang_Sekwati_CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            };
+
+            html2pdf().from(element).set(options).outputPdf().then(function(pdf) {
+                const blob = new Blob([pdf], { type: 'application/pdf' });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = options.filename;
+                a.click();
+
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        const downloadButton = document.getElementById('downloadPdfButton');
+        downloadButton.addEventListener('click', downloadPdf);
+    </script>
 </body>
 
 </html>
