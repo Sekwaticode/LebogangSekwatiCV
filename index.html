@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
     <title>Lebogang Sekwati CV</title>
 </head>
 
@@ -108,36 +108,8 @@
             </div>
         </section>
     </main>
+    <a href="https://sekwaticode.github.io/LebogangSekwatiCV/" download="Lebogang_Sekwati_CV">Download</a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <button id="downloadPdfButton">Download PDF</button>
-    <script>
-        function downloadPdf() {
-            const element = document.body; 
-            const options = {
-                margin: 10,
-                filename: 'Lebogang_Sekwati_CV.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            };
-
-            html2pdf().from(element).set(options).outputPdf().then(function(pdf) {
-                const blob = new Blob([pdf], { type: 'application/pdf' });
-                const url = URL.createObjectURL(blob);
-
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = options.filename;
-                a.click();
-
-                URL.revokeObjectURL(url);
-            });
-        }
-
-        const downloadButton = document.getElementById('downloadPdfButton');
-        downloadButton.addEventListener('click', downloadPdf);
-    </script>
 </body>
 
 </html>
