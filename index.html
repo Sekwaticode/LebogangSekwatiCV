@@ -1,117 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Lebogang Sekwati CV</title>
-</head>
-
-<body>
-    <main>
-        <section class="left">
-            <div class="left">
-                <img class="left-image thin-red-border"
-                    src="https://pbs.twimg.com/profile_images/1593527560524206080/9p04I1CJ_400x400.jpg"
-                    alt="Lebogang Sekwati">
-
-                <h1> Project portfolio of Lebogang Sekwati</h1>
-                <br>
-                <p>As an aspiring web developer, I'm passionate about crafting captivating online experiences. With
-                    dedication, problem-solving skills, and a love for coding, I strive to create innovative
-                    websites and applications. </p>
-                <hr>
-
-                <h3 class="h3">Contact details</h3>
-                <ul>
-                    <li><i class="fa-brands fa-github"></i> Github: <a href="https://github.com/Sekwaticode"
-                            target="_blank">SekwatiCodes</a></li>
-                    <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <a
-                            href="https://www.linkedin.com/in/lebogang-sekwati-544751191" target="_blank">LinkedIn</a>
-                    </li>
-                </ul>
-
-                <div class="skills">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>
-                            <p><i class="fa-brands fa-square-js"></i> Javascript </p>
-                        </li>
-                        <li>
-                            <p> <i class="fa-brands fa-html5"></i> HTML</p>
-                        </li>
-                        <li>
-                            <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-                        </li>
-                        <li>
-                            <p><i class="fa-solid fa-database"></i> SQL</p>
-                        </li>
-                    </ul>
-                </div>
-                <hr>
-                <h3>Language Fluency</h3>
-                <ul>
-                    <li>
-                        <p><i class="fa-solid fa-pen-nib"></i> English</p>
-                        <progress max="100" value="90"></progress>
-                    </li>
-                    <li>
-                        <p><i class="fa-solid fa-pen-nib"></i> isiZulu</p>
-                        <progress max="100" value="80"></progress>
-                    </li>
-                    <li>
-                        <p><i class="fa-solid fa-pen-nib"></i> Afrikaans</p>
-                        <progress max="100" value="65"></progress>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="right">
-            <div class="experience">
-                <h1><i class="fa-solid fa-book"></i> Education</h1>
-                <h3>2015-2019</h3>
-                <h4><i class="fa-solid fa-gavel"></i> Bcom(Law)</h4>
-                <ul>
-                    <li>I became familiar with the South African Legal System.</li>
-                    <li>I participated in Moot court and became familiar with litigation procedures.</li>
-                    <li>I majored in Economics, gained vast knowledge about Economic analyses.</li>
-                    <li>I learnt about the basics of bookkeeping in accounting.</li>
-                    <li>I studied several business principles.</li>
-                </ul>
-
-                <br>
-                <hr>
-
-                <h1><i class="fa-sharp fa-solid fa-gear"></i> Work Experience</h1>
-                <h3>March 2019 - October 2021</h3>
-                <h4><i class="fa-solid fa-phone"></i> Platinum Life</h4>
-                <ul>
-                    <li>I called 30 prospective clients per day with excellent telephone etiquette.</li>
-                    <li>I maintained excellent customer feedback in terms of friendliness, professionalism, and clarity.</li>
-                    <li>I maintained an organized, clean, professional workspace.</li>
-                    <li>I excelled in achieving individual daily targets while assisting other team members in achieving theirs.</li>
-                    <li>I was highly resourceful in multiple computer applications to optimize customer satisfaction, client retention, and conflict resolution.</li>
-                </ul>
-
-                <br>
-
-                <h3>October 2018 - February 2019</h3>
-                <h4><i class="fa-solid fa-loveseat"></i> Kwa-Mkhulu Furniture</h4>
-                <ul>
-                    <li>I developed a morning routine that ensured the furniture store was clean and presentable before opening time.</li>
-                    <li>I warmly welcomed 20-30 customers per day.</li>
-                    <li>I developed a Microsoft Excel Spreadsheet that allowed the business to calculate selling price easily and consistently.</li>
-                    <li>I provided administrative and clerical support via Microsoft Excel and CompuByte.</li>
-                    <li>I provided excellent customer service with a helpful and friendly attitude.</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+          <img src="https://scontent-jnb2-1.xx.fbcdn.net/v/t1.6435-9/142368964_2860778984169220_4075313107419600326_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeHpsJEKU62DdinrXvEJW-QOmSR-Dep_juqZJH4N6n-O6pOu-d0Gip8c5CfAJB0AmIO7GKafkdhNYCMmAWoai_pT&_nc_ohc=fzsoGqwYrCoAX-DcgY6&_nc_oc=AQmZl9GWnDWQ6w4DCdhzwmBayGuOSts5hsq-kRdaOquelk38ldqwXViQfsN7heuxb7E&_nc_ht=scontent-jnb2-1.xx&oh=00_AfB-SPXxxsujnrXZMqZqT5rrcYs3CIMQX9koCGneaQ266g&oe=65B81879" alt="Profile Image" class="profile-image">
+          <h3>Hello There!</h3>
+          <h3>My name is Lebogang Sekwati</h3>
+          <h3>And I'm an aspiring Web Developer</h3>
+          <p>
+            A seasoned web developer proficient in HTML, CSS, and JavaScript ES6,
+            with expertise in Jasmine unit testing. Experienced in backend
+            development using Node.js, managing databases with PostgreSQL, and
+            containerizing applications with Docker. Possesses a robust skill set,
+            ensuring efficient and scalable web solutions through a comprehensive
+            tech stack.
+          </p>
+          <div class="social-media"></div>
+        </div>
+      </section>
+      
+      
+    <script src="script.js"></script>
+  </body>
 </html>

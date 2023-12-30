@@ -1,92 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Poppins:wght@700&display=swap");
 
-*,
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
 }
 
 body {
-  background-color: rgb(95, 31, 31);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
-ul {
-  padding: 1rem;
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
-h3 {
-  padding: 1rem;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-main {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
 }
 
-.skills,
-.About {
-  margin-top: 0;
-  margin-bottom: 30px;
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
 }
 
-.experience {
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 30px;
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
 }
 
-.experience ul {
-  margin: 2rem;
-  margin-top: 0;
-  margin-bottom: 30px;
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
 }
 
-.education {
-  padding: 1rem;
-  line-height: 1.5;
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.education ul {
-  margin: 2rem;
+/* Add this CSS to style.css */
+
+/* Add a class to your image element */
+.profile-image {
+  width: 150px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  border-radius: 50%; /* Make the image circular */
+  border: 3px solid var(--main-color); /* Add a border with your desired color */
+  object-fit: cover; /* Ensure the image covers the entire container */
 }
 
-.left {
-  background-color: white;
-  padding: 1rem;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.thin-red-border {
-  border-color: rgb(165, 91, 91);
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 50%;
-}
-
-.left-image {
-  width: 200px;
-}
-
-.right {
-  background-color: white;
-  padding: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: 20% 1fr;
-  }
-
-  .left {
-    height: auto;
-  }
-
-  .right {
-    height: auto;
-  }
-} 
+/* Apply the class to your image element in HTML */
