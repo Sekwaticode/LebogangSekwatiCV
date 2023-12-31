@@ -71,22 +71,94 @@ section {
   display: none;
 }
 
-.home{
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-/* Add this CSS to style.css */
-
-/* Add a class to your image element */
-.profile-image {
-  width: 150px; /* Set the desired width */
-  height: 150px; /* Set the desired height */
-  border-radius: 50%; /* Make the image circular */
-  border: 3px solid var(--main-color); /* Add a border with your desired color */
-  object-fit: cover; /* Ensure the image covers the entire container */
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Apply the class to your image element in HTML */
+span {
+  color: var(--main-color);
+}
+.home-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  box-shadow: none;
+  background: var(--second-bg-color);
+  color: var(--main-color);
+}
+
+.text-content {
+  max-width: 500px; 
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Profile image styles */
+.home-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #0ef;
+  object-fit: cover;
+}
+
+.text-content h3,
+.text-content p {
+  margin-bottom: 1rem;
+}
