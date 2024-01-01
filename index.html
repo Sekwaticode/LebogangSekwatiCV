@@ -1,55 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Personal Portfolio Website Design</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-    <i class="bx bx-menu" id="menu-icon"></i>
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section class="home" id="home">
-    <div class="home-content">
-      <div class="text-content">
-        <h3>Hello There!</h3>
-        <h1>My name is Lebogang Sekwati</h1>
-        <h3>I am an aspiring web developer!</h3>
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text-content">
+          <h3>Hello There!</h3>
+          <h1>My name is <span>Lebogang Sekwati</span></h1>
+          <h3>I am an aspiring web developer!</h3>
+          <p>
+            I am an aspiring web developer proficient in HTML, CSS, and
+            JavaScript ES6, with expertise in Jasmine unit testing. Experienced
+            in backend development using Node.js, managing databases with
+            PostgreSQL, and containerizing applications with Docker. Possesses a
+            robust skill set, ensuring efficient and scalable web solutions
+            through a comprehensive tech stack.
+          </p>
+          <a href="#" class="btn">Download CV</a>
+
+          <div class="social-media">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+
+        <div class="home-img">
+          <img
+            src="https://pbs.twimg.com/media/GCq-nwKXoAA6AuY?format=jpg&name=900x900"
+            alt="Profile Image of Lebogang Sekwati"
+            class="profile-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="home-img">
+        <img
+            src="https://pbs.twimg.com/media/GCrCLfVWkAAHbcX?format=jpg&name=large"
+            alt="Profile Image of Lebogang Sekwati"
+            class="profile-image"
+          />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About<span> Me</span></h2>
+        <h3>Web developer</h3>
         <p>
-          I am an aspiring web developer proficient in HTML, CSS, and JavaScript ES6,
-          with expertise in Jasmine unit testing. Experienced in backend
+          I am an aspiring web developer proficient in HTML, CSS, and JavaScript
+          ES6, with expertise in Jasmine unit testing. Experienced in backend
           development using Node.js, managing databases with PostgreSQL, and
           containerizing applications with Docker. Possesses a robust skill set,
           ensuring efficient and scalable web solutions through a comprehensive
           tech stack.
         </p>
-        <a href="#" class="btn">Download CV</a>
-        
-        <div class="social-media">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class="bx bxl-html5"></i>
+          <h3>HTML</h3>
+          <p>
+            I offer all these skills. Look at me and all my cool front-end and
+            back-end skills
+          </p>
+        </div>
+
+        <div class="skills-box">
+          <i class="bx bxs-file-css"></i>
+          <h3>CSS</h3>
+          <p>
+            I offer all these skills. Look at me and all my cool front-end and
+            back-end skills
+          </p>
+        </div>
+
+        <div class="skills-box">
+          <i class="bx bxl-javascript"></i>
+          <h3>Javascript</h3>
+          <p>
+            I offer all these skills. Look at me and all my cool front-end and
+            back-end skills
+          </p>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-nodejs"></i>
+          <h3>Node.js</h3>
+          <p>
+            I offer all these skills. Look at me and all my cool front-end and
+            back-end skills
+          </p>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-postgresql"></i>
+          <h3>PostgreSQL</h3>
+          <p>
+            I offer all these skills. Look at me and all my cool front-end and
+            back-end skills
+          </p>
+        </div>
+        <div class="skills-box">
+          <i class="bx bxl-docker"></i>
+          <h3>Docker</h3>
+          <p>
+            I offer all these skills. Look at me and all my cool front-end and
+            back-end skills
+          </p>
         </div>
       </div>
-      
-      <div class="home-img">
-        <img src="https://pbs.twimg.com/media/GCq-nwKXoAA6AuY?format=jpg&name=900x900" alt="Profile Image" class="profile-image">
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading" id="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img
+            src="https://i.pinimg.com/564x/6a/0b/f0/6a0bf05b9b331a64e6adc9c59dcb1d1a.jpg"
+            alt=""
+          />
+          <div class="portfolio-layer">
+            <h4>Web app Development</h4>
+            <p>I developed a web app</p>
+            <a href="#"><i class="bx bx-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="https://i.pinimg.com/564x/6a/0b/f0/6a0bf05b9b331a64e6adc9c59dcb1d1a.jpg"
+            alt="Snake Game"
+          />
+          <div class="portfolio-layer">
+            <h4>Web app Development</h4>
+            <p>I developed a web app</p>
+            <a href="#"><i class="bx bx-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img
+            src="https://i.pinimg.com/564x/fd/a4/b7/fda4b72909472b12602bd9c26c0c0cdc.jpg"
+            alt="Snake Game"
+          />
+          <div class="portfolio-layer">
+            <h4>Web app Development</h4>
+            <p>I developed a web app</p>
+            <a href="#"><i class="bx bx-link-alt"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <script src="script.js"></script>
-</body>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+      
+      <div class="footer-iconTop">
+         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+   </footer>
+   
+    <script >
+    
+    let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x"); // Remove the space between "bx" and "-x"
+    navbar.classList.toggle("active");
+};
+
+let sections = document.querySelectorAll("section"); // Change to querySelectorAll to get all sections
+let navLinks = document.querySelectorAll("header nav a"); // Change to querySelectorAll
+
+window.onscroll = () => {
+    sections.forEach((sec) => { // Iterate through sections
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if (top >= offset && top < offset + height) { // Fix variable name to 'height'
+            navLinks.forEach((links) => {
+                links.classList.remove("active");
+            });
+            document.querySelector("header nav a[href*=" + id + "]").classList.add("active");
+        }
+    });
+
+    let header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 100);
+
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
+};
+
+    </script>
+  </body>
 </html>
